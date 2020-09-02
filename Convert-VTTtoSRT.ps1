@@ -14,7 +14,7 @@ Function Get-FileName($initialDirectory,$FileFilter,$Title) {
 Clear-Variable ("Out", "Text", "Count")
 
 #Write FileName path in variabel FileName
-$FileName = Get-FileName -FileFilter "VTT files (*.vtt)| *.vtt"
+$FileName = Get-FileName -FileFilter "VTT files (*.vtt)| *.vtt|All files (*.*)| *.*"
 
 #Read VTT file and write in Text variable
 $Text = Get-Content $FileName -Encoding utf8
