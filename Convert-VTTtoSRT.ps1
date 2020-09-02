@@ -11,7 +11,7 @@ Function Get-FileName($initialDirectory,$FileFilter,$Title) {
     $OpenFileDialog.filename
 }  #end function Get-FileName
 
-Clear-Variable ("Out", "Text", "Count")
+Clear-Variable ("Out", "Text", "Count") -ErrorAction SilentlyContinue
 
 #Write FileName path in variabel FileName
 $FileName = Get-FileName -FileFilter "VTT files (*.vtt)| *.vtt|All files (*.*)| *.*"
